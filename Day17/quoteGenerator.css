@@ -1,0 +1,84 @@
+@import url('https://fonts.googleapis.com/css2?family=Edu+QLD+Hand:wght@400..700');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Edu QLD Hand", cursive;
+}
+body{
+    background-color: #bbc492;
+}
+.quoteBox{
+    background: #cfcde5;
+    width: 700px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    border-radius: 10px;
+    text-align: center;
+    padding: 40px;
+    transform: translate(-50%, -50%);
+    box-shadow: 0 10px 20px 0 rgba(6, 5, 5, 0.15);
+}
+.quoteBox h2{
+    font-size: 32px;
+    margin-bottom: 40px;
+    position: relative;
+}
+.quoteBox h2::after{
+    content: '';
+    width: 75px;
+    height: 3px;
+    border-radius: 3px;
+    background: #849151;
+    position: absolute;
+    bottom: -10px;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+.quoteBox blockquote{
+    font-size: 26px;
+    min-height: 110px;
+}
+.quoteBox blockquote::before, .quoteBox blockquote::after{
+    content:'"';
+}
+.quoteBox span{
+    display: inline-block;
+    margin-top: 10px;
+    text-align: right;
+    position: relative;
+    padding-left: 30px;
+}
+.quoteBox span::before{
+    content: '';
+    width: 20px;
+    height: 2px;
+    background: #849151;
+    position: absolute;
+    top: 50%;
+    left: 0;
+    translate: transformY(-50%);
+    /* right: 125px; */
+}
+.quoteBox div{
+    width: 100%;
+    margin-top: 50px;
+    justify-content: center;
+    display: flex;
+}
+.quoteBox button{
+    background: #849151;
+    cursor: pointer;
+    color: #fff;
+    border-radius: 50px;
+    width: 150px;
+    height: 50px;
+    border: 0;
+    margin: 5px;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    font-weight: 500;
+}
