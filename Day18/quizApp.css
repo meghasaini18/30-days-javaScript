@@ -1,0 +1,61 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Roboto", sans-serif;
+}
+body{
+    background: #863dea;
+}
+.container{
+    width: 90%;
+    max-width: 600px;
+    margin: 100px auto 0;
+    padding: 20px;
+    border-radius: 10px; 
+    background: #EAFCB6;
+}
+.container h2{
+    color: #05275e;
+    font-size: 30px;
+    font-weight: 500;
+    border-bottom: 1px solid #333;
+    padding-bottom: 20px;
+}
+.quiz{
+    padding: 20px 0;
+}
+.quiz h3{
+    font-size: 20px;
+    color: #05275e;
+    font-weight: 500;
+}
+.btn{
+    color: #222;
+    width: 100%;
+    font-size: 15px;
+    border: 1px solid #222;
+    border-radius: 5px;
+    margin: 10px 0;
+    padding: 10px;
+    cursor: pointer;
+    text-align: left;
+}
+.btn:hover{
+    color: #fff;
+    background: #222;
+}
+.nxtBtn{
+    background: #05275e;
+    color: #fff;
+    border: 0;
+    font-weight: 500;
+    width: 100px;
+    margin: 20px auto 0;
+    padding: 10px;
+    cursor: pointer;
+    border-radius: 4px;
+    display: none;
+}
