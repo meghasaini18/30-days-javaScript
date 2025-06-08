@@ -1,0 +1,113 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI'
+}
+body{
+    background: linear-gradient(45deg, #89fff9, #00d5cf);
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    min-height: 100vh;
+}
+.container{
+    padding: 40px 0;
+}
+.recipe{
+    width: 100%;
+    max-width: 500px;
+    /* height: 100vh; */
+    background-color: #fff;
+    border-radius: 10px;
+    margin: 50px auto;
+    text-align: center;
+    padding: 30px 25px;
+    box-shadow: rgba(29, 222, 216, 0.907);;
+}
+.recipe h1{
+    font-size: 24px;
+    color: #01555b;
+    margin-bottom: 20px;
+}
+.searchBox{
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 20px;
+}
+.searchBox input{
+    width: 80%;
+    padding: 10px;
+    outline: 0;
+    border: 0;
+    border-radius: 5px;
+    background: #00d5cf;
+    /* font-size: 16px; */
+    color: #fff;
+    margin: 10px 0;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+}
+#searchBtn{
+    background: #00d5cf;
+    color: #fff;
+    border: 0;
+    outline: 0;
+    font-size: 16px;
+    padding: 8px 14px;
+    border-radius: 5px;
+    margin: 10px 0;
+    cursor: pointer;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+}
+.recipeImg img{
+    width: 200px;
+    height: 150px;
+    /* display: flex; */
+    margin: 0 auto;
+    padding: 10px;
+}
+.recipeName{
+    background: #00d5cf;
+    color: #fff;
+    width: 90%;
+    padding: 10px;
+    border-radius: 8px;
+    margin: 10px auto;
+}
+.recipeName h2{
+    font-weight: 700;
+    font-size: 18px;
+}
+.recipeName p{
+    font-weight: 400;
+    font-size: 14px;
+    margin-top: 5px;
+}
+.ingredient{
+    margin-top: 30px;
+    text-align: left;
+    justify-content: space-between;
+    margin: 20px 0;
+}
+.ingredient ul{
+    list-style: none;
+    padding-left: 0;
+}
+.ingredient li{
+    margin-bottom: 8px;
+    font-size: 14px;
+
+}
+.viewBtn{
+    text-align: right;
+}
+.viewBtn button{
+    color: #fff;
+    background: #00d5cf;
+    border: 0;
+    outline: 0;
+    box-shadow: 0 3px 6px rgba(0, 0, 0, 0.2);
+    cursor: pointer;
+    border-radius: 5px;
+    padding: 8px 14px;
+}
