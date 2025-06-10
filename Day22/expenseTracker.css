@@ -1,0 +1,131 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Lato", sans-serif;
+}
+body{
+    background: #511a76;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.container{
+    box-shadow: rgba(14, 14, 14, 0.2);
+    border-radius: 10px;
+}
+.expenseTracker{
+    width:500px;
+    background-color: #ffffffc7;
+    /* box-shadow: rgba(52, 51, 51, 0.2);
+    border-radius: 10px; */
+    padding: 20px;
+    margin: 30px auto;
+}
+h1{
+    line-spacing: 1px;
+    margin: 0;
+}
+h3{
+    border-bottom: 1px solid #bbb;
+    padding-bottom: 10px;
+    margin: 40px 0 10px;
+}
+h4{
+    margin: 0;
+    text-transform: uppercase;
+}
+.inc-expContainer{
+    display: flex;
+    justify-content: space-between;
+    padding: 20px;
+    margin: 20px 0;
+    border-radius: 10px;
+    background-color: #fff;
+    box-shadow: rgba(10, 10, 10, 0.013);
+}
+.inc-expContainer div{
+    text-align: center;
+    flex: 1;
+}
+.inc-expContainer div:first-of-type{
+    border-right: 1px solid #dedede;
+}
+.inc-expContainer div money{
+    font-size: 20px;
+    margin: 5px 0;
+    letter-spacing: 1;
+}
+.inc-expContainer div .money-plus{
+    color: #2ecc71;
+}
+.inc-expContainer div .money-minus{
+    color: #c0392b;
+}
+.list{
+    list-style: none; 
+    padding: 0;
+    margin-bottom: 40px;
+}
+.list li{
+    background-color: #fff;
+    color: #333;
+    display: flex;
+    justify-content: space-between;
+    position: relative;
+    padding: 10px;
+    margin: 10px 0;
+    box-shadow: rgba(10, 10, 10, 0.013);
+}
+.list li.plus{
+    border: 1px solid #2ecc71;
+}
+.list li .minus{
+    border: 1px solid #c0392b;
+}
+label{
+    display: inline-block;
+    margin: 10px 0;
+}
+input[type="text"], input[type="number"]{
+    width: 100%;
+    display: block;
+    padding: 10px;
+    font-size: 16px;
+    border-radius: 1px solid #dedede;
+}
+.btn{
+    background: #511a76;
+    color: #fff;
+    padding: 15px;
+    width: 100%;
+    font-size: 16px;
+    margin: 10px 0 30px;
+    display: block;
+    border-radius: 5px;
+    margin-top: 2rem;
+    box-shadow: rgba(10, 10, 10, 0.013);
+    outline: 0;
+    border: 0;
+    cursor: pointer;
+}
+.delete-btn{
+    color: #fff;
+    background-color: #c0392b;
+    border: 0;
+    outline: 0;
+    font-size: 20px;
+    position: absolute;
+    top: 50%;
+    left: 0;
+    padding: 2px 5px;
+    cursor: pointer;
+    opacity: 0;
+    transform: translate(-100%, -50%);
+}
+.list li:hover .delete.btn{
+    opacity: 1;
+}
