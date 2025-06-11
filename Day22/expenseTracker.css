@@ -95,7 +95,7 @@ input[type="text"], input[type="number"]{
     display: block;
     padding: 10px;
     font-size: 16px;
-    border-radius: 1px solid #dedede;
+    border: 1px solid #dedede;
 }
 .btn{
     background: #511a76;
@@ -126,6 +126,6 @@ input[type="text"], input[type="number"]{
     opacity: 0;
     transform: translate(-100%, -50%);
 }
-.list li:hover .delete.btn{
+.list li:hover .delete-btn{
     opacity: 1;
 }
