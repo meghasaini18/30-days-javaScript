@@ -72,5 +72,4 @@ init();
 
 form.addEventListener("submit", addTransaction);
 
-form.addEventListener("submit", addTransaction);
 
