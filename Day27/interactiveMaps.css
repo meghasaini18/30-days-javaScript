@@ -1,0 +1,154 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,100..900;1,100..900&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    font-family: "Noto Sans", sans-serif;
+    color: #fff;
+}
+::-webkit-scrollbar{
+    height: 10px;
+    width: 10px;
+}
+::-webkit-scrollbar-track{
+    background: #2d2733;
+}
+::-webkit-scrollbar-thumb{
+    background: #555;
+}
+::-webkit-scrollbar-thumb{
+    background: #dcbfff;
+}
+.world-map{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    top: 0;
+    left: 0;
+    width: max-content;
+    height: max-content;
+    position: absolute;
+    min-height: 30em;
+    background-color: #151218;
+}
+svg{
+    width: 100vw;
+    height: 100vh;
+}
+path{
+    fill: #443b4d;
+    stroke: #dcbfff;
+    transition: 100ms;
+}
+path:hover{
+    fill: #c99aff;
+}
+.side-panel{
+    position: fixed;
+    height: 100vh;
+    background-color: #1d1a20;
+    max-width: 30em;
+    width: 100%;
+    padding: 2em;
+    top: 0;
+    left: -30em; 
+    overflow: scroll;
+    z-index: 1;
+    transition:600ms cubic-bezier(0.77, 0, 0.18, 1);
+}
+.side-panel container{
+    padding-block: 2em;
+    transition: 200ms ease-out;
+}
+.side-panel-open{
+    left: 0;
+}
+.hide{
+    opacity: 0;
+}
+.close-btn{
+    background: #443d4b;
+    height: 5em;
+    width: 5em;
+    border: 0;
+    outline: 0;
+    top: 0;
+    right: 0;
+    position: absolute;
+    color: #fff;
+    cursor: pointer;
+    transition: 100ms;
+}
+.close-btn p{
+    font-size: 2em;
+}
+.close-btn:hover{
+    background: #c99aff;
+}
+.loading{
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    position: absolute;
+    transition: 200ms;
+    pointer-events: none;
+    user-select: none;
+}
+.flag-image{
+    width: 60%;
+    max-width: 20em;
+    margin-block: 1em; 
+}
+.side-panel container ul{
+    list-style: none;
+    margin-block: 2em;
+}
+.side-panel container ul li{
+    margin-bottom: 2em;
+}
+.side-panel li{
+    margin-bottom: 1em;
+    font-size: 1.2em;
+}
+.side-panel ul ul{
+    list-style: circle;
+    padding-left: 2em;
+    margin-top: 1em;
+    font-size: 0.7em;
+}
+.side-panel strong{
+    color: #dcbfff;
+}
+.zoom-controls{
+    position: fixed;
+    top: 1em;
+    /* left: 1em; */
+    right: 1em;
+}
+.zoom-controls button{
+    background-color: #443d4b;
+    color: #fff;
+    display: block;
+    width: 1.5em;
+    height: 1.5em;
+    font-size: 2em;
+    cursor: pointer;
+    border: 1px solid #dcbfff;
+}
+.zoom-controls button:hover{
+    background-color: #2e2a33;
+}
+button:disabled{
+    background-color: #1d1a20;
+    border: 1px solid #443d4b;
+    cursor: default;
+    color: #333;
+
+
+}
+.zoom-out{
+    margin-bottom: 10px;
+}
