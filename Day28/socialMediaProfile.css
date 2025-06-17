@@ -1,0 +1,77 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Open Sans", sans-serif;
+}
+body{
+    background-color: #EEEFE0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+.profile-card{
+    background: #D1D8BE;
+    width: 300px;
+    text-align: center;
+    border-radius: 1.5em;
+    padding: 2em;
+    position: relative;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.3);
+}
+.profile-picture{
+    width: 100px;
+    border-radius: 50%;
+    margin-bottom: 1em;
+}
+.username{
+    font-size: 1.3em;
+    margin-bottom: 0.5em;
+}
+.bio{
+    color: #434242;
+    margin-bottom: 1em;
+}
+.status{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 1em;
+}
+.follow-btn{
+    background-color: #819A91;
+    border: 0;
+    border-radius: 5px;
+    padding: 0.4em 1em;
+    cursor: pointer;
+    color: #000000;
+}
+.social-links img{
+    width: 30px;
+    margin: 0 0.3em;
+}
+#toggle-theme{
+    background: transparent;
+    position: absolute;
+    top: 15px;
+    right: 15px;
+    cursor: pointer;
+    border: 0;
+    font-size: 1.5em;
+}
+body.dark{
+    background: #222831;
+}
+body.dark .profile-card{
+    background-color: #393E46;
+    color: #f9f9f9;
+}
+body.dark .bio{
+    color: #bbb;
+}
+body.dark .follow-btn{
+    background: #595555;
+    color: #fff;
+}

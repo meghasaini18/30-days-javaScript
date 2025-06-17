@@ -19,9 +19,6 @@ body{
 ::-webkit-scrollbar-thumb{
     background: #555;
 }
-::-webkit-scrollbar-thumb{
-    background: #dcbfff;
-}
 .world-map{
     display: flex;
     justify-content: center;
@@ -59,7 +56,7 @@ path:hover{
     z-index: 1;
     transition:600ms cubic-bezier(0.77, 0, 0.18, 1);
 }
-.side-panel container{
+.side-panel .container{
     padding-block: 2em;
     transition: 200ms ease-out;
 }
@@ -146,8 +143,6 @@ button:disabled{
     border: 1px solid #443d4b;
     cursor: default;
     color: #333;
-
-
 }
 .zoom-out{
     margin-bottom: 10px;
