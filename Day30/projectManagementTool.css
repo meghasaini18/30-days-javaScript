@@ -1,0 +1,72 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family:'Courier New', Courier, monospace;
+}
+body{
+    background: #efebeb;
+}
+.container{
+    background-color: #D2D0A0;
+    max-width: 500px;
+    /* justify-content: center;
+    align-items: center; */
+    padding: 20px;
+    margin: 100px auto;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.5);
+    border-radius: 5px;
+    border: 0;
+    outline: 0;
+}
+h1{
+    display: block;
+    text-align: center;
+}
+form input, textarea, button{
+    display: block;
+    width: 100%;
+    padding: 8px;
+    margin: 10px;
+}
+form button{
+    background: #90b27a;
+    color: #fff;
+    font-weight: 600;
+    border: 0;
+    outline: 0;
+    cursor: pointer;
+}
+form button:hover{
+    background: #537D5D;
+}
+.task{
+    border: 1px solid #555;
+    position: relative;
+    background: #fafafa;
+    padding: 8px;
+    margin-bottom: 10px;
+}
+.task.complete{
+    text-decoration: line-through;
+    background: #d4edda;
+}
+.task-btn{
+    display: flex;
+    justify-content: space-evenly;
+} 
+.task-btn .tick-btn{
+    font-weight: 900;
+    color: #378449;
+    font-size: 20px;
+}
+.task button{
+    cursor: pointer;
+    padding: 5px 8px;
+    background: #ddd;
+    border: 0;
+    font-size: 18px;
+}
+.task button:hover{
+    background: #bbb;
+}
